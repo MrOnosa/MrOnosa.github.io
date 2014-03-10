@@ -1,0 +1,223 @@
+﻿html, body {
+    height: 100%;
+}
+
+.wrapper {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+header, footer, nav, section {
+    display: block;
+}
+
+
+.header {
+    display: table-row;
+}
+
+.content {
+    display: table-row; /* height is dynamic, and will expand... */
+    height: 100%; /* ...as content is added (won't scroll) */
+}
+
+.footer {
+    display: table-row;
+}
+
+/* Styles for basic forms
+-----------------------------------------------------------*/
+fieldset {
+    border: 1px solid #ddd;
+    padding: 0 1.4em 1.4em 1.4em;
+    margin: 0 0 1.5em 0;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+textarea {
+    min-height: 75px;
+}
+
+.editor-label {
+    margin: 1em 0 0 0;
+}
+
+.editor-field {
+    margin: 0.5em 0 0 0;
+}
+
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error {
+    color: #f00;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    border: 1px solid #f00;
+    background-color: #fee;
+}
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: #f00;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+.legal[readonly] {
+    height: 141px;
+    width: 97%;
+    cursor: default;
+}
+
+.versionHistory,
+.versionHistory:hover,
+.versionHistory:focus {
+    color: #333333;
+    text-decoration: none;
+}
+
+#slider {
+    float: right;
+}
+
+#header {
+    background-image: url(images/lightBlueHeader_bg.png);
+}
+
+#logo {
+    font-family: 'Della Respira', serif;
+    font-size: 64px;
+    margin: 0 0 0 25px;
+    color: #FFF;
+    min-width: 373px; 
+    line-height: normal;
+}
+
+#paypal {
+    float: right;
+    font-size: 18px;
+    color: #FFFFFF;
+    padding: 47px 19px 0 0;
+    margin-bottom: 13px;
+}
+
+    #paypal form {
+        margin: 0;
+    }
+
+.donate {
+    padding: 12px 0 0 170px;
+}
+
+#menu {
+    background-image: url(images/blue_menu_bg.png);
+    background-repeat: repeat-x;
+    background-color: #0665AF;
+}
+
+    #menu ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    #menu li {
+        list-style: none;
+        float: left;
+        background: url(images/blue_menu_border.png) right no-repeat;
+    }
+
+        #menu li.right {
+            list-style: none;
+            float: right;
+            background: none;
+        }
+
+    #menu a {
+        float: left;
+        height: 20px;
+        padding: 10px 30px;
+        color: #FFFFFF;
+        font-size: 15px;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 2px;
+    }
+
+        #menu a:hover {
+            background: url(images/blue_menu_border.png);
+        }
+
+#main {
+    background-color: #FFF;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+#footer {
+    color: #FFFFFF;
+    font-size: 11px;
+    background-image: url(images/blue_menu_bg.png);
+}
+
+    #footer a {
+        color: #FFFFFF;
+    }
+
+        #footer a:hover {
+            color: #DFDFDF;
+        }
+
+#footer_left {
+    float: left;
+    padding: 13px 0 3px 30px;
+}
+
+#footer_right {
+    float: right;
+    padding: 13px 30px 3px 0;
+}
+
+.minimumParagraph p:before {
+    content: "";
+    width: 10em;
+    display: block;
+    overflow: hidden;
+}
+
+#trailer {
+    width: 640px;
+    height: 390px;
+    margin: 0px 0 0px 5px;
+}
+
+@media screen and (max-width: 979px) {
+    #trailer {
+        float: none;
+        width: 715px;
+        margin: 0;
+    }
+
+    #slider {
+        float: none;
+    }
+}
+
+@media (max-width: 767px) {
+    #main {
+        border-radius: 0px;
+        padding: 0px;
+    }
+}
