@@ -106,18 +106,6 @@ textarea {
     line-height: normal;
 }
 
-#paypal {
-    float: right;
-    font-size: 18px;
-    color: #FFFFFF;
-    padding: 47px 19px 0 0;
-    margin-bottom: 13px;
-}
-
-    #paypal form {
-        margin: 0;
-    }
-
 .donate {
     padding: 12px 0 0 170px;
 }
